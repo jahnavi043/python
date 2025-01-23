@@ -1,0 +1,71 @@
+num1= int(input("Enter the first number: "))
+num2= int(input("Enter the second number: "))
+sum = num1+num2
+print( "The sum is",sum)
+************************************************************************************************************************************
+num = int(input("Enter a number:"))
+if num%2 ==0:
+    print("Even")
+else:
+    print("odd")
+**********************************************************************************************************************************
+num = int(input("Enter a number: "))
+factorial=1
+for i in range(1,num+1):
+    factorial*=i
+    print(factorial)
+*********************************************************************************************************************************
+def calculator():
+    print("Select operation: ")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiply")
+    print("4.Divide")
+    choice = input("Enter choice(1/2/3/4): ")
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    if choice =='1':
+        print(num1+num2)
+    elif choice =='2':
+        print(num1-num2)
+    elif choice =='3':
+        print(num1*num2)
+    elif choice =='4':
+        if num2!=0:
+            print(num1/num2)
+        else:
+            print(Error)
+    else:
+        print("Invalid input")
+calculator()
+****************************************************************************************************************************
+start = int(input("Enter start number: "))
+end = int(input("Enter end number: "))
+prime=[]
+for num in range(start,end+1):
+    if num>1:
+        is_prime=True
+        for i in range(2, int(num**0.5)+1 ):
+            if num%i ==0:
+                is_prime = False
+            break
+        if is_prime:
+            prime.append(num)
+print(prime)
+***************************************************************************************************************************
+name = "jaanu"
+print("hello",name)
+***************************************************************************************************************************
+a,b=10,20
+a,b=b,a
+print("after swapping " "a=",a,"b=",b)
+**************************************************************************************************************************
+def count_vowels(s):
+    vowels="aeiouAEIOU"
+    count=0
+    for char in s:
+        if char in vowels:
+            count+=1
+    return count
+text="Jahnavi kusuma"
+print("Number of vowels:",count_vowels(text))
